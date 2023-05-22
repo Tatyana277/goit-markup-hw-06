@@ -638,3 +638,7 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+
+.form {
+display: block;
+}
