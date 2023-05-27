@@ -730,7 +730,7 @@ body {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.04em;
   color: var(--color-clients);
 }
 
@@ -747,6 +747,7 @@ body {
   background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.2);
   outline: transparent;
+  
   transition: border-color var(--transition);
 }
 
@@ -758,6 +759,10 @@ body {
 
 .contact-form-input:focus + .contact-form-icon {
   fill: var(--color-accent-form);
+}
+
+.modal-form-comment {
+margin-bottom: 16px;
 }
 
 .contact-form-comment {
@@ -772,6 +777,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  outline: transparent;
   background-color: transparent;
 
   transition: border-color var(--transition);
@@ -783,7 +789,6 @@ body {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
-
 
 .contact-form-checkbox {
   font-size: 12px;
@@ -803,7 +808,7 @@ body {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
-  }
+}
 
 .contact-form-checkbox-text-link {
   font-size: 12px;
@@ -821,7 +826,7 @@ body {
 }
 
 .contact-form-on-checkbox-icon {
-cursor: pointer;
+  cursor: pointer;
 }
 
 .contact-form-checkbox-icon {
@@ -837,11 +842,12 @@ cursor: pointer;
   opacity: 1;
 }
 .contact-form-checkbox-input:checked
-  + .contact-form-checkbox>.contact-form-checkbox-decor > 
-  .contact-form-on-checkbox-icon
+  + .contact-form-checkbox
+  > .contact-form-checkbox-decor
+  > .contact-form-on-checkbox-icon
   > .contact-form-checkbox-icon {
   fill: var(--main-title-text);
-    opacity: 1;
+  opacity: 1;
 }
 
 .contact-form-input-wrapper {
@@ -881,5 +887,5 @@ cursor: pointer;
 
   color: var(--main-title-text);
 
-transition: background-color var(--transition)
+  transition: background-color var(--transition);
 }
