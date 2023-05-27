@@ -753,8 +753,8 @@ body {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  padding-left: 38px;
   background-color: transparent;
+  padding-left: 38px;
   outline: transparent;
 
   transition: border-color var(--transition);
@@ -830,6 +830,7 @@ body {
   letter-spacing: 0.04em;
   text-decoration-line: underline;
   color: var(--color-link);
+  margin-left: 4px;
 }
 
 .contact-form-checkbox {
