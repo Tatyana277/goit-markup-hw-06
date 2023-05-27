@@ -494,7 +494,7 @@ body {
 }
 
 .email-footer {
-  position: absolute;
+  
 }
 
 .subscribe-form-footer-btn {
@@ -715,6 +715,10 @@ body {
 
 /* ----------- contact form ------------*/
 .contact-form {
+}
+
+.modal-form {
+margin-bottom: 8px;
 }
 .contact-form-label {
   display: block;

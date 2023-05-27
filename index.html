@@ -398,13 +398,20 @@
           </ul>
         </div>
         <div class="subscribe-footer">
-          <h3 class="footer-title">Subscribe</h3>
+          <p class="footer-title">Subscribe</p>
           <form class="subscribe-form-footer">
-            <input class="subscribe-footer-input" type="email" name="email-subscribe-footer" id="email-footer" placeholder="E-mail">
-            <label class="email-footer" for="email-footer"></label>
-            <button class="subscribe-form-footer-btn" type="submit">Subscribe
-              <svg class="subscribe-footer-telegram" width="24" height="24" >
-                <use href="./images/icons.svg#icon-tg" ></use>
+            <label class="email-footer">
+              <input
+                class="subscribe-footer-input"
+                type="email"
+                name="email-subscribe-footer"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-form-footer-btn" type="submit">
+              Subscribe
+              <svg class="subscribe-footer-telegram" width="24" height="24">
+                <use href="./images/icons.svg#icon-tg"></use>
               </svg>
             </button>
           </form>
@@ -420,6 +427,7 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="contact-form">
+          <div class="modal-form">
           <label for="user_name" class="contact-form-label"
             ><span class="contact-form-headline">Name</span></label
           >
@@ -459,28 +467,31 @@
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
-          <label class="contact-form-label-comment"
-            ><span class="contact-form-headline">Comment</span>
+          <label for="user-comment" class="contact-form-label-comment"
+            ><span class="contact-form-headline">Comment</span></label>
             <textarea
               class="contact-form-comment"
               name="user_comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
-          </label>
-          <label class="contact-form-checkbox">
-            <input
+          
+              <input
               class="contact-form-checkbox-input visually-hidden"
               type="checkbox"
+              id="user_accept"
               name="user_accept"
               required
             />
             <svg class="contact-form-on-checkbox-icon" width="16" height="16">
               <use class="contact-form-checkbox-icon" href="./images/icons.svg#icon-check"></use>
             </svg>
+            <label for="user_accept" class="contact-form-checkbox">
             <span class="contact-form-checkbox-text">I accept the terms and conditions of the</span>
-            <a class="contact-form-checkbox-text-link" href="http://">Privacy Policy</a>
+            <a class="contact-form-checkbox-text-link" href="#">Privacy Policy</a>
           </label>
           <button class="contact-form-btn-send" type="submit">Send</button>
+          </div>
         </form>
       </div>
     </div>
