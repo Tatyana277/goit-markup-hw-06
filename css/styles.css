@@ -760,7 +760,7 @@ body {
   transition: border-color var(--transition);
 }
 
-.contact-form-input,
+.contact-form-input:focus,
 .contact-form-comment:focus {
   border-color: var(--color-accent-form);
 }
