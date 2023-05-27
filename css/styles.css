@@ -21,6 +21,7 @@
   --color-clients: #8e8f99;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --background-modal: #fcfcfc;
+  --color-border-form-footer: #ffffff;
 }
 
 h1,
@@ -424,10 +425,13 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   align-items: flex-start;
-  column-gap: 120px;
 }
 
-.social-title {
+.logo-footer-page {
+  margin-right: 120px;
+}
+
+.footer-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -455,13 +459,73 @@ body {
 }
 
 .social-list-icon-footer {
-  fill: #ffffff;
+  fill: var(--main-title-text);
 }
 
 .social-list-link-footer:hover,
 .social-list-link-footer:focus {
   background-color: #31d0aa;
 }
+.subscribe-footer {
+  display: block;
+  margin-left: auto;
+}
+
+.subscribe-footer-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--color-border-form-footer);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+}
+
+.subscribe-form-footer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.subscribe-footer-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--main-title-text);
+}
+
+.email-footer {
+  position: absolute;
+}
+
+.subscribe-form-footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 165px;
+  padding: 8px 24px;
+  gap: 16px;
+
+  background: var(--background-btn);
+  border-radius: 4px;
+  border: none;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 5;
+  letter-spacing: 0.04em;
+
+  color: var(--main-title-text);
+}
+
+.subscribe-footer-telegram {
+  fill: var(--color-border-form-footer);
+}
+
+/* ------ form footer ------*/
 /* ----- end footer ------ */
 
 /* --------------- page portfolio  -------------- */
@@ -776,11 +840,13 @@ body {
   opacity: 0;
 }
 
-.contact-form-checkbox-input:checked+.contact-form-on-checkbox-icon {
-border-color: var(--accent-color);
+.contact-form-checkbox-input:checked + .contact-form-on-checkbox-icon {
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
 }
-.contact-form-checkbox-input:checked + .contact-form-on-checkbox-icon > .contact-form-checkbox-icon {
+.contact-form-checkbox-input:checked
+  + .contact-form-on-checkbox-icon
+  > .contact-form-checkbox-icon {
   fill: var(--main-title-text);
   opacity: 1;
 }
