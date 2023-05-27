@@ -750,7 +750,9 @@ body {
 .contact-form-input {
   width: 100%;
   height: 40px;
+
   border: 1px solid rgba(46, 47, 66, 0.4);
+  
   border-radius: 4px;
   background-color: transparent;
   padding-left: 38px;
@@ -810,6 +812,8 @@ body {
 }
 
 .contact-form-checkbox-decor {
+  width: 16px;
+  height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
 
@@ -840,8 +844,6 @@ body {
 }
 
 .contact-form-icon {
-  width: 18px;
-  height: 24px;
   position: absolute;
   top: 50%;
   left: 16px;
