@@ -466,6 +466,8 @@ body {
 .social-list-link-footer:focus {
   background-color: #31d0aa;
 }
+
+/* ------ form footer ------*/
 .subscribe-footer {
   display: block;
   margin-left: auto;
@@ -532,7 +534,6 @@ body {
   fill: var(--color-border-form-footer);
 }
 
-/* ------ form footer ------*/
 /* ----- end footer ------ */
 
 /* --------------- page portfolio  -------------- */
@@ -596,6 +597,7 @@ body {
   border-right: 1px solid var(--color-border-card);
   border-bottom: 1px solid var(--color-border-card);
 }
+
 .title-projct {
   font-weight: 500;
   font-size: 20px;
@@ -604,16 +606,19 @@ body {
   color: var(--primary-text-color);
   margin-bottom: 8px;
 }
+
 .section-filter {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+
 .portfolio-page-item {
   display: block;
   transition: box-shadow var(--transition);
 }
+
 .portfolio-page-item:hover,
 .portfolio-page-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -624,6 +629,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -641,6 +647,7 @@ body {
   transform: translateY(100%);
   transition: transform var(--transition);
 }
+
 .portfolio-page-item:hover .overlay,
 .portfolio-page-item:focus .overlay {
   transform: translateY(0%);
@@ -658,6 +665,7 @@ body {
   background: rgba(46, 47, 66, 0.4);
   transition: opacity var(--transition), visibility var(--transition);
 }
+
 .modal {
   position: absolute;
   width: 408px;
@@ -671,6 +679,7 @@ body {
   border-radius: 4px;
   transition: transform var(--transition);
 }
+
 .modal-close-btn {
   position: absolute;
   top: 24px;
@@ -742,12 +751,12 @@ body {
 .contact-form-input {
   width: 100%;
   height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   padding-left: 38px;
   background-color: transparent;
-  border: 1px solid rgba(46, 47, 66, 0.2);
   outline: transparent;
-  
+
   transition: border-color var(--transition);
 }
 
@@ -762,14 +771,13 @@ body {
 }
 
 .modal-form-comment {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .contact-form-comment {
   width: 100%;
   height: 120px;
   resize: none;
-  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 8px 16px;
 
@@ -777,6 +785,7 @@ margin-bottom: 16px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   outline: transparent;
   background-color: transparent;
 
@@ -790,6 +799,10 @@ margin-bottom: 16px;
   color: rgba(46, 47, 66, 0.4);
 }
 
+.contact-form-checkbox-privacy {
+  margin-bottom: 24px;
+}
+
 .contact-form-checkbox {
   font-size: 12px;
   line-height: 1.17;
@@ -799,11 +812,13 @@ margin-bottom: 16px;
 }
 
 .contact-form-checkbox-decor {
+  display: inline-flex;
+
   width: 16px;
   height: 16px;
   border: 1px solid var(--background-secondary);
   border-radius: 2px;
-  display: inline-flex;
+  
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -841,6 +856,7 @@ margin-bottom: 16px;
   border-color: var(--accent-color);
   opacity: 1;
 }
+
 .contact-form-checkbox-input:checked
   + .contact-form-checkbox
   > .contact-form-checkbox-decor
